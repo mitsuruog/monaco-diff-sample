@@ -7,7 +7,14 @@
   </head>
   <body class="min-h-screen w-full flex flex-col">
       <header class="h-10 bg-slate-300 border-b px-4 flex items-center">Monaco Diff Sample</header>
-      <main id="main" class="flex flex-col flex-grow"></main>
+      <main id="main" class="flex flex-col flex-grow gap-8">
+        <template id="editor">
+          <div class="flex flex-col gap-4">
+            <div data-title="" class="h-8 flex items-center underline px-4"></div>
+            <div data-file=""></div>
+          </div>
+        </template>
+      </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
